@@ -88,7 +88,7 @@ func readUpload(r *http.Request) (*upload, error) {
 		if kind == "" {
 			kind = "text/plain"
 		}
-		return &upload{name: part.FileName(), bytes: bytes, kind: kind}, nil
+		return &upload{name: browserName(part.FileName()), bytes: bytes, kind: kind}, nil
 	}
 }
 
@@ -200,4 +200,16 @@ func main() {
 		log.Println(err)
 		os.Exit(1)
 	}
+}
+
+// browserName undoes what a browser did to the filename on the way here.
+//
+// **A browser cannot put a double quote, a carriage return or a line feed inside the quotes of
+// a multipart header, so it sends them as `%22`, `%0D` and `%0A`** (that is what the HTML
+// standard says to do). Some servers decode those for you and some do not, and Go's
+// `mime/multipart` does not: a file called `my "best" notes.txt` would otherwise be listed as
+// `my %22best%22 notes.txt`. The Node and Python versions of this sample decode them, so this
+// does too, and the page shows the same name whichever language is running it.
+func browserName(sent string) string {
+	return strings.NewReplacer("%22", `"`, "%0D", "\r", "%0A", "\n").Replace(sent)
 }
