@@ -1,5 +1,7 @@
 # File uploads in Go: S3 for the bytes, Postgres for everything else
 
+[English](README.md) | [Français](README.fr.md) | [日本語](README.ja.md) | [Español](README.es.md)
+
 A sample app for the [MitsuruTech Learning Platform](https://mitsurutech.co.uk). Upload a
 file; S3 keeps it; Postgres remembers where it went and what it is called. The table on the
 page comes out of Postgres, and every download comes out of S3.
@@ -92,12 +94,21 @@ Then open <http://localhost:8080>.
 
 ## Licence
 
-MIT. Fork it, break it, keep the pieces.
+This work is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). You may share it and adapt it for learning and teaching, if you credit Mitsuru Technologies Ltd, do not use it commercially, and share anything you make from it under the same licence. The full text is in the `LICENSE` file.
+
+## Learn more
+
+- [Deploying an app from GitHub](https://mitsurutech.co.uk/help/deploy-app): how the
+  platform runs a repository like this one.
+- [The cloud stack](https://mitsurutech.co.uk/help/cloud-stack): the S3-shaped service your
+  session starts for the app to use.
+- Teaching a class? [Your first year is free](https://mitsurutech.co.uk/pricing) for up to
+  50 students, and [signing up](https://mitsurutech.co.uk/signup) takes an email address.
 
 ## About
 
-Made by [Mitsuru Technologies](https://mitsurutech.co.uk/learning), who build the
-MitsuruTech Learning Platform.
+Made by [Mitsuru Technologies Ltd](https://mitsurutech.co.uk/learning) (registered in England & Wales, company number 16755264), who build the
+[MitsuruTech Learning Platform](https://mitsurutech.co.uk/learning) for schools and colleges.
 
 The same sample in other languages: [Node](https://github.com/mitsurutech/uploads-node),
 [Python](https://github.com/mitsurutech/uploads-python) and
