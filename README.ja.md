@@ -1,6 +1,6 @@
 # Go でファイルアップロード：バイト列は S3、それ以外は Postgres
 
-[English](README.md) | [Français](README.fr.md) | [日本語](README.ja.md) | [Español](README.es.md)
+[English](README.md) | [Français](README.fr.md) | [Español](README.es.md) | [日本語](README.ja.md) | [Deutsch](README.de.md)
 
 [MitsuruTech 学習プラットフォーム](https://mitsurutech.co.uk/ja)のサンプルアプリです。ファイルをアップロードすると、
 S3 がそれを保管し、Postgres がその行き先と名前を覚えています。ページの表は Postgres から、

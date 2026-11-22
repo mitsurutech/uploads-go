@@ -1,6 +1,6 @@
 # Téléversement de fichiers en Go : S3 pour les octets, Postgres pour tout le reste
 
-[English](README.md) | [Français](README.fr.md) | [日本語](README.ja.md) | [Español](README.es.md)
+[English](README.md) | [Français](README.fr.md) | [Español](README.es.md) | [日本語](README.ja.md) | [Deutsch](README.de.md)
 
 Une application d’exemple pour la [plateforme d’apprentissage MitsuruTech](https://mitsurutech.co.uk/fr). Vous
 téléversez un fichier ; S3 le conserve ; Postgres retient où il est allé et comment il

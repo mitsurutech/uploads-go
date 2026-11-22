@@ -1,6 +1,6 @@
 # Subida de archivos en Go: S3 para los bytes, Postgres para todo lo demás
 
-[English](README.md) | [Français](README.fr.md) | [日本語](README.ja.md) | [Español](README.es.md)
+[English](README.md) | [Français](README.fr.md) | [Español](README.es.md) | [日本語](README.ja.md) | [Deutsch](README.de.md)
 
 Una aplicación de ejemplo para la [plataforma de aprendizaje MitsuruTech](https://mitsurutech.co.uk/es). Subes un
 archivo; S3 lo guarda; Postgres recuerda adónde fue y cómo se llama. La tabla de la página

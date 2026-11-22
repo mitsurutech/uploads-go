@@ -1,6 +1,6 @@
 # File uploads in Go: S3 for the bytes, Postgres for everything else
 
-[English](README.md) | [Français](README.fr.md) | [日本語](README.ja.md) | [Español](README.es.md)
+[English](README.md) | [Français](README.fr.md) | [Español](README.es.md) | [日本語](README.ja.md) | [Deutsch](README.de.md)
 
 A sample app for the [MitsuruTech Learning Platform](https://mitsurutech.co.uk). Upload a
 file; S3 keeps it; Postgres remembers where it went and what it is called. The table on the
